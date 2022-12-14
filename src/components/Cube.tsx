@@ -2,23 +2,18 @@ import { ReactNode } from "react";
 
 type CubeProps = {
     children?: ReactNode;
+    className?: string;
 };
 
-const Cube = ({ children }: CubeProps) => {
+const Cube = ({ className }: CubeProps) => {
     return (
-        <div className="cube  text-white">
-            <div className="flex items-center justify-center face front">
-                <span>front</span>
-            </div>
-            <div className="face back"></div>
-            <div className="flex items-center justify-center face left">
-                <span>left</span>
-            </div>
-            <div className="items-center justify-center face right"></div>
-            <div className="flex items-center justify-center face top">
-                <span>top</span>
-            </div>
-            <div className="items-center justify-center face bottom"></div>
+        <div className={`cube ${className}`}>
+            <div className="face front"></div>
+            {/* <div className="face back"></div> */}
+            <div className="face left"></div>
+            <div className="face right"></div>
+            <div className="face top"></div>
+            {/* <div className="face bottom"></div> */}
         </div>
     );
 };
