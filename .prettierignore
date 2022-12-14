@@ -1,0 +1,12 @@
+package.json
+package-lock.json
+dist
+build
+index.html
+src/types/tailwindcss-classnames.ts
+src/locales
+# downloaded into the repository on the jenkins build
+npm-utils
+
+fresco/
+frescoConfig.json

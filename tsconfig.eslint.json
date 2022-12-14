@@ -1,0 +1,15 @@
+// Special typescript project file, used by eslint only.
+// When used with TS, eslint needs all the files it lints to be included in the
+// project, to avoid performance penalties.
+// So this adds non-runtime files - like config files - to the "include" config.
+{
+    "extends": "./tsconfig.json",
+    "include": [
+        // repeated from base configs
+        "src",
+        // eslint-only
+        "*.config.js",
+        "*.config.ts",
+        ".eslintrc.js"
+    ]
+}

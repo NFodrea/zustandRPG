@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "sourceMap": true,
+        "strict": true,
+        // "useDefineForClassFields": false,
+        "allowJs": true,
+        // "noUnusedLocals": true,
+        "esModuleInterop": true,
+        "importHelpers": true,
+        "moduleResolution": "node",
+        "jsx": "react-jsx",
+        "forceConsistentCasingInFileNames": true,
+        "resolveJsonModule": true,
+        "lib": ["DOM", "esnext"],
+        "skipLibCheck": true,
+        "experimentalDecorators": true,
+        "allowSyntheticDefaultImports": true,
+        "isolatedModules": true,
+        "noUnusedParameters": true,
+        "noUncheckedIndexedAccess": true,
+        "baseUrl": "src",
+        "types": ["vite/client", "vite-plugin-svgr/client"]
+    },
+    "include": ["src"]
+}
